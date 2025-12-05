@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clarity Check</title>
+
+<style>
+    /* RESET */
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Inter", Arial, sans-serif;
+    }
+
+    body{
+        background: linear-gradient(135deg, #fff8e1, #ffe89c);
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container{
+        width: 90%;
+        max-width: 900px;
+        background: rgba(255,255,255,0.7);
+        backdrop-filter: blur(10px);
+        border-radius: 18px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        padding: 35px;
+        border: 2px solid rgba(255,255,255,0.4);
+    }
+
+    h1{
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 25px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: #d97706;
+        text-transform: uppercase;
+    }
+
+    .Sub-Container{
+        display: flex;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    /* LEFT CARD */
+    .left{
+        width: 45%;
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 16px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        border-left: 6px solid #2563eb;
+    }
+
+    .left h3{
+        margin: 12px 0;
+        font-size: 18px;
+        color: #2563eb;
+        font-weight: 600;
+        padding-left: 6px;
+        border-left: 4px solid #dbeafe;
+    }
+
+    /* RIGHT SECTION */
+    .right{
+        width: 55%;
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 16px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        position: relative;
+    }
+
+    .right img{
+        height: 110px;
+        width: 110px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #fff;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        margin-bottom: 18px;
+    }
+
+    .right h3{
+        margin: 10px 0;
+        font-size: 20px;
+        color: #374151;
+        font-weight: 600;
+        padding-bottom: 4px;
+        border-bottom: 2px dashed #e5e7eb;
+        width: 80%;
+    }
+
+    @media(max-width: 700px){
+        .Sub-Container{
+            flex-direction: column;
+        }
+        .left, .right{
+            width: 100%;
+        }
+        h1{
+            font-size: 26px;
+        }
+    }
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+    <h1>Raghav Shastri</h1>
+
+    <div class="Sub-Container">
+
+        <div class="left">
+            <h3>Login UI</h3>
+            <h3>Marketplace UI</h3>
+            <h3>Profile UI</h3>
+            <h3>Court UI</h3>
+            <h3>Category UI</h3>
+        </div>
+
+        <div class="right">
+            <img src="./Satyamev.png" alt="">
+            <h3>Kya Kerna hai</h3>
+            <h3>Kyu Kerna hai</h3>
+            <h3>Kya kr Rha hoo</h3>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
